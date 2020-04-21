@@ -39,10 +39,11 @@ int main()
   
   cout << "Enter a sequence of coordinates x, y: ";
   // Определение переменных; условие продолжения; последнее действие на каждом повторении.
-  for (float x, y; cin >> x >> y;)
+  for (double x = 0, y = 0; cin >> x >> y;)
   {
-    const bool within_the_circle = in_circle(x, y, 1, -1, 3);
-    cout << "(x, y) within the circle == " << within_the_circle << endl;
+    cout << "(" << x << ", " << y << ") " <<
+      (in_figure(x, y)? "is": "is not") // "тернарный оператор": условие в выражении
+      << " inside the figure" << endl;
   }
   return EXIT_SUCCESS;
 }
