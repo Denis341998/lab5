@@ -26,16 +26,6 @@ bool sqr_lt_2(double x)
 
 int main()
 {
-  
-  cout << "Enter length: ";
-  double len = 0.0;
-  cin >> len;
-  cout << "in to m = " << in2m(len) << endl;
-  cout << "ft to m = " << ft2m(len) << endl;
-  cout << "m to in = " << m2in(len) << endl;
-  cout << "m to ft = " << m2ft(len) << endl;
-  cout << "in to ft = " << m2ft(in2m(len)) << endl;
-  cout << "ft to in = " << m2in(ft2m(len)) << endl;
 
   double x = 0;
   cout << "x = ";
