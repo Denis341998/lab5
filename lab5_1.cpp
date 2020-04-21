@@ -3,6 +3,18 @@
 // Строки C++.
 #include <string>
 
+// Дюймы in в метры.
+double in2m(double in) { return 0.0254 * in; }
+
+// Футы ft в метры.
+double ft2m(double ft) { return 0.304 * ft; }
+
+// Метры m в дюймы.
+double m2in(double m) { return m / 0.0254; }
+
+// Метры m в футы.
+double m2ft(double m) { return m / 0.304; }
+
 int main()
 {
   using namespace std; // Искать имена в std.
