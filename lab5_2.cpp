@@ -1,8 +1,10 @@
 #include <iostream>
-#include <cstdlib>
+#include <clocale>
 
 int main()
 {
-  std::cout << "Hello, user!";
-  return EXIT_SUCCESS; // Возвратим ОС "код успеха".
+  using namespace std;
+  setlocale(LC_ALL, "Russian");
+  cout << "Текст" << endl;
+  return EXIT_SUCCESS;
 }
