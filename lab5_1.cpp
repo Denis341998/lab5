@@ -22,7 +22,7 @@ int main()
   
   double x = 0;
   cout << "Enter a sequence of numbers x: ";
-  while (cin >> x) // Условие продолжения выполнения цикла.
+  for (double x = 0; cin >> x;)
   {
     cout << "ok";
   }
