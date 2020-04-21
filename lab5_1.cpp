@@ -17,6 +17,13 @@ double m2in(double m) { return m / 0.0254; }
 // Метры m в футы.
 double m2ft(double m) { return m / 0.304; }
 
+// Определение своей функции-предиката.
+// Проверяет условие: x в квадрате меньше 2.
+bool sqr_lt_2(double x)
+{
+  return x*x < 2;
+}
+
 int main()
 {
   
