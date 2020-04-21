@@ -17,12 +17,15 @@ double m2ft(double m) { return m / 0.304; }
 
 int main()
 {
-  using namespace std; // Искать имена в std.
-
-  string user_name = "user"; // Определить переменную.
-  cout << "Hello, " << user_name << "!" << endl;
-
-  user_name = "The Great Whale"; // Изменить значение переменной.
-  cout << "I am " << user_name;
-  return EXIT_SUCCESS; // Возвратим ОС "код успеха".
+  using namespace std;
+  cout << "Enter length: ";
+  double len = 0.0;
+  cin >> len;
+  cout << "in to m = " << in2m(len) << endl;
+  cout << "ft to m = " << ft2m(len) << endl;
+  cout << "m to in = " << m2in(len) << endl;
+  cout << "m to ft = " << m2ft(len) << endl;
+  cout << "in to ft = " << m2ft(in2m(len)) << endl;
+  cout << "ft to in = " << m2in(ft2m(len)) << endl;
+  return EXIT_SUCCESS;
 }
