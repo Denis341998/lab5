@@ -3,14 +3,12 @@
 // Строки C++.
 #include <string>
 
+using namespace std; // Искать имена в std.
+
 int main()
 {
-  using namespace std; // Искать имена в std.
-
-  string user_name = "user"; // Определить переменную.
-  cout << "Hello, " << user_name << "!" << endl;
-
-  user_name = "The Great Whale"; // Изменить значение переменной.
-  cout << "I am " << user_name;
-  return EXIT_SUCCESS; // Возвратим ОС "код успеха".
+    // Читаем из потока ввода символы и пишем их в поток вывода.
+    for (char ch; cin.get(ch);)
+        cout.put(ch);
+    return EXIT_SUCCESS; // Возвратим ОС "код успеха".
 }
